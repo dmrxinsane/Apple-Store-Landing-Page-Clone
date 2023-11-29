@@ -29,7 +29,7 @@ const page = () => {
     
     let func1 = async () => {
       let newarr = [];
-      let { data: { results } } = await axios.get("https://api.unsplash.com/search/photos?client_id=b5fHYW_TO2u4-BUYzrOumJds1zy8TOnqyQ42kKPcAzw&page=1&query=avengers-endgame")
+      let { data: { results } } = await axios.get("https://api.unsplash.com/search/photos?client_id=b5fHYW_TO2u4-BUYzrOumJds1zy8TOnqyQ42kKPcAzw&page=1&query=batman")
       results.forEach((val) => {
         newarr.push(val.urls.full);
       })
