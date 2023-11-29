@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap');
+// #showcase:nth-child(2)
+
+
+
+#showcase{
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+    justify-content: center;
+    margin-left: 3%;
+
+    >h2{
+        font-size: 1.8rem;
+        font-weight: 600;
+        >span{
+            color: gray;
+        }
+    }
+
+
+    >#leftBtn-cat{
+        position: absolute;
+        background-color: transparent;
+        border-radius: 50%;
+        display: flex;
+        top: 40%;
+        left: 0%;
+        z-index: 99;
+        opacity: 0;
+        transition: all ease-in 0.2s;
+        // transform: translate(-50%,-50%);
+        >img{
+            border-radius: 50%;
+            mix-blend-mode:multiply;
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+            cursor: pointer;
+        }
+    }
+    >#cat-1::-webkit-scrollbar{
+        overflow-x: hidden;
+    }
+
+    >#rightBtn-cat{
+        position: absolute;
+        background-color: transparent;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        top:40%;
+        right: 4%;
+        z-index: 99;
+        opacity: 0;
+        transition: all ease-in 0.2s;
+        >img{
+            border-radius: 50%;
+            mix-blend-mode:multiply;
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+            cursor: pointer;
+        }
+    }
+
+    >#cat-1{
+        display: flex;
+        // background-color: green;
+        overflow-x: scroll;
+        padding: 10px 20px;
+        gap: 30px;
+        border-radius: 20px;
+        scroll-behavior: smooth;
+        padding-right: 70px;
+
+        >img{
+            min-width: calc(1347px/7);
+            min-height: 150px;
+            max-height: 161px;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 20px;
+        }
+        >img:hover{
+            scale: 1.05;
+            transition: all ease-in 0.2s;
+        }
+    }
+}

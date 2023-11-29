@@ -1,0 +1,25 @@
+#footer-header{
+    font-size: 0.9rem;
+    color: black;
+    font-weight: 500;
+
+}
+
+#column-call{
+    display: inline-flex;
+    flex-direction: column;
+    gap: 3px;
+    // background-color: yellow;
+}
+
+#column-desc{
+    display: flex;
+    font-size: 0.8rem;
+    color: gray;
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: none;
+    // background-color: green;
+}
+
+

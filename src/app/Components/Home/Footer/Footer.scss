@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap');
+// #showcase:nth-child(2)
+
+#main-footer{
+    display: flex;
+    flex-direction: column;
+    // background-color: royalblue;
+    margin-left: 4%;
+    margin-top: 20px;
+    gap: 20px;
+    font-family: 'Roboto', sans-serif;
+
+    >h2{
+        font-size: 2rem;
+        font-weight: 600;
+    }
+
+    >#lower-footer{
+        padding: 20px 80px;
+        // margin-right: 15%;
+        >p{
+            font-size: 0.78rem;
+            border-bottom: 2px solid gray;
+            padding-bottom: 20px;
+        }
+    }
+
+    >#lower-footer{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        
+        >#apple-store{
+            // border-top: 2px solid gray;
+            display: flex;
+            // background-color: red;
+            color: gray;
+            align-items: center;
+            >svg:nth-child(1){
+                font-size: 1.5rem;
+            }
+            >svg:nth-child(2){
+                margin-top: 2px;
+                font-size: 1.6rem;
+                color: rgba(179, 174, 174, 0.774);
+            }
+            >h3{
+                font-weight: 500;
+                color: gray;
+                font-size: 0.9rem;
+            }
+
+        }
+
+        >#link-section{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            >div{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+
+
+    }
+    
+}
+
+#last-elem{
+    display: flex;
+    flex-direction: column;
+
+    >div:nth-child(1){
+        font-size: 0.9rem;
+        >h2{
+            color: gray;
+            >span{
+                color: blue;
+                text-decoration: underline;
+            }
+        }
+        padding-bottom: 5px;
+    }
+
+    >div:nth-child(2){
+        border-top: 2px solid gray;
+        padding-top: 10px;
+        display: flex;
+        
+        >h2{
+            font-size: 0.9rem;
+            color: gray;
+        }
+
+        >#policies{
+            padding: 0 30px;
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            // border-right: 2px solid black;
+            >h2{
+                font-size: 0.8rem;
+                padding-right: 20px;
+                border-right: 2px solid gray;
+            }
+            >h2:nth-last-child(1){
+                border: none;
+            }
+        }
+    }
+
+}
+
+#btnSection{
+    display: flex;
+    gap: 20px;
+    >button{
+        font-size: 0.95rem;
+        border-radius: 20px;
+        background-color: rgba(128, 128, 128, 0.24);
+        color: black;
+        text-align: center;
+        padding: 10px 10px;
+        font-weight: 500;
+    }
+}
+
+@media screen and (max-width:700px){
+    #main-footer{
+        margin-left: 0%;
+        padding: 0 10px;
+
+        >#lower-footer{
+            padding: 20px 10px;
+        }
+    }
+
+    
+}
